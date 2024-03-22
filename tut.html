@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himasindhu Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        background: url("imgs_for_gym/abs-1850926_1280.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        color: white;
+        font-family: 'Preahvihear', sans-serif;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        /* Adjust the width as needed */
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        margin: 20px;
+        display: inline-block;
+        text-align: center;
+
+
+    }
+
+    .left h1 {
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+    }
+
+    .left img {
+        width: 60px;
+        filter: invert(100%);
+        border-radius: 8px;
+
+    }
+
+    .center {
+        /* border: 2px solid cornflowerblue; */
+        margin: 20px;
+        display: inline-block;
+    }
+
+    .right {
+        /* border: 2px solid pink; */
+        margin: 20px;
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar ul {
+        padding: 0;
+        list-style: none;
+        white-space: nowrap;
+        /* Prevents items from wrapping */
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+        margin-right: 20px;
+        /* Adjust spacing as needed */
+    }
+
+    .navbar li a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 10px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        color: blueviolet;
+        text-decoration: underline;
+
+    }
+
+    .btn {
+        display: inline-block;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+    .btn button {
+        padding: 10px 20px;
+        margin: 6px;
+        background: cadetblue;
+        border: 2px solid grey;
+        font-family: 'Preahvihear', sans-serif;
+
+        border-radius: 10px;
+        cursor: pointer;
+        color: whitesmoke;
+
+        /* Adjust spacing as needed */
+    }
+
+    .btn button:hover,
+    .btn button:active {
+        color: whitesmoke;
+        background: #1873a3;
+
+    }
+    .container{
+        border: 2px solid red;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    
+    .form-group input{
+        text-align: center;
+        display: block;
+        font-family: 'Preahvihear', sans-serif;
+        width: 448px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+    .container .btn{
+        display: block;
+        margin: auto;
+        width: 23%;
+        padding: 15px;
+    }
+</style>
+
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <a href="#"><img src="imgs_for_gym/logo.png" alt="Logo"></a>
+            <h1>Himasindhu Fitness</h1>
+        </div>
+
+        <div class="center">
+            <!-- center box for navigation -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <!-- right box for buttons -->
+            <div class="btn">
+                <button class="active">Call Us Now</button>
+                <button class="active">Email Us</button>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Hyderabad now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
